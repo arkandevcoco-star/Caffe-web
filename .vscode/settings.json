@@ -1,4 +1,5 @@
 {
+    "git.path": "C:\\Program Files\\Git\\bin\\git.exe",
     "python.testing.pytestArgs": [
         "."
     ],

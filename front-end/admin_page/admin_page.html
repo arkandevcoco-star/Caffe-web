@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Nganjuk Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+            <div>
+                <h1 class="h2 text-dark fw-bold">Admin Dashboard</h1>
+                <p class="text-muted">Nganjuk Cafe Warehouse Stock & Price Management</p>
+            </div>
+            <a href="../index.html" class="btn btn-outline-secondary">← Home Page</a>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold mb-3 text-success">Add New Menu</h5>                        
+                        <div class="mb-3">
+                            <label for="input-nama" class="form-label text-secondary small fw-semibold">Product Name</label>
+                            <select class="form-select" name="isi_stock" id="input-nama">
+                                <option value="0" disabled selected>Select Product</option>
+                                <option value="Expresso">Expresso</option>
+                                <option value="Americano">Americano</option>
+                                <option value="Cafe Latte">Cafe Latte</option>
+                                <option value="Cappuccino">Cappuccino</option>
+                                <option value="Latte">Latte</option>
+                                <option value="Machiato">Machiato</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="input-stok" class="form-label text-secondary small fw-semibold">Enter Stock</label>
+                            <input type="number" id="input-stok" class="form-control" placeholder="0">
+                        </div>               
+                        <button class="btn btn-success w-100 fw-bold shadow-sm" onclick="TambahBarang()">
+                            Save to Warehouse
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold mb-3 text-success">Menu & Stock List</h5>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product Name</th>
+                                        <th scope="col">Stock</th>
+                                        <th scope="col">Price (Rp)</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabel-stok">
+                                    <!-- Stock data will be populated via JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
