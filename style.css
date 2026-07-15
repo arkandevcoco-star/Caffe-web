@@ -1,0 +1,13 @@
+body{
+    background-image: url(IMG/background.png);
+    background-size: 500px;
+
+}
+.header{
+    background-color: rgb(221, 74, 20);
+    border-color: black;
+}
+.menu{
+    background-color: rgb(247, 181, 134);
+    border-radius: 10%;
+}
