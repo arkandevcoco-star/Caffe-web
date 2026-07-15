@@ -17,7 +17,7 @@
     </header>
     <div>
       <div class="menu p-5 m-5">
-        <h2 class="text-center">MENU</h2>
+        <h2 class="text-center"><img src="IMG/coffee-icon-svgrepo-com.svg" width="50px" alt=""> MENU</h2>
         <div class="container">
           <div class="row d-flex justify-content-between">
             <div class="col">Expresso</div>
@@ -52,12 +52,34 @@
         </div>
           
         </div>
-      </div>
     </div>
-    
-
-
-
+    <div class="pesan p-4 mb-4">
+      <form action="" class="">
+        <div class="mb-3">
+          <label for="name" class="form-label">😀Name</label>
+          <input  id="nama-pemesan" type="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+  <label for="pilihan1" class="form-label">☕Select your coffee order.</label>
+  <select required class="form-select" id="pilihan1" aria-label="Default select example">
+    <option selected value="0">Menu</option>
+    <option value="Expresso">Expresso</option>
+    <option value="Americano">Americano</option>
+    <option value="Caffe Latte">Caffe Latte</option>
+    <option value="Cappuccino">Cappuccino</option>
+    <option value="Flat White">Flat White</option>
+    <option value="Machiato">Machiato</option>
+  </select>
+  <button
+    id="Order-btn"
+    class="btn btn-success mt-4 "
+    onclick="Order()"
+    type="button"
+    >ORDER!</button>
+</div>
+      </form>
+    </div>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 
