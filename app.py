@@ -2,15 +2,16 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return "Halo, selamat datang di website saya"
-@app.route("/profile")
-def profile():
-    return "this is profile page"
+nama = "Arkan"
 
-@app.route("/kontak")
-def kontak():
-    return "hubungi saya"
+menu = [
+    {"name": "Latte", "price": 15000},
+    {"name": "Cappuccino", "price": 12000},
+    {"name": "Espresso", "price": 10000}
+]
+
+@app.route('/')
+def index():
+    return render_template('index.html', nama=nama, menu=menu)
 
 app.run(debug=True)
