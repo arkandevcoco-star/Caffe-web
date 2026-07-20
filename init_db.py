@@ -7,7 +7,7 @@ cursor = conn.cursor()
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS menu (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TXT NOT NULL,
+    name TEXT NOT NULL,
     price INTEGER NOT NULL,
     stock INTEGER NOT NULL
 )
